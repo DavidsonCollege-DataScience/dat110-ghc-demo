@@ -1,6 +1,7 @@
 # GitHub Classrooms Introduction
 Prof. Pete Benbow
 
+- [Introduction](#introduction)
 - [Clone the repository](#clone-the-repository)
   - [Copy the repo URL](#copy-the-repo-url)
   - [Create a new project in RStudio](#create-a-new-project-in-rstudio)
@@ -27,7 +28,32 @@ Prof. Pete Benbow
   - [Stage your changes](#stage-your-changes)
   - [Commit your changes](#commit-your-changes)
   - [Push your changes](#push-your-changes)
+- [Submitting to Gradescope](#submitting-to-gradescope)
 - [Next steps](#next-steps)
+
+# Introduction
+
+This homework will introduce you to **GitHub Classrooms** (GHC), which
+will be our platform for the final project for this course. To
+familiarize yourself with the GitHub workflow, you will complete a
+demonstration assignment that I have staged in GHC for you.
+
+We’re using GHC for a few reasons:
+
+- GitHub is one of the preeminent platforms for data scientists and
+  software engineers to manage and share code. If you continue down this
+  path as a career or even as a hobby, you will undoubtedly use GitHub
+  at some point.
+- GitHub allows you and your partner to work on the project in parallel,
+  each of you contributing code separately without needing to be on the
+  same computer or even in the same physical space.
+- GHC works better for long projects that take several weeks, and that
+  have intermediate deliverables like your project proposal and EDA.
+- GitHub integrates with Gradescope, allowing you to seamlessly submit
+  assignments from one platform directly to the other.
+
+Hopefully this assignment gets you oriented to the platform and ready to
+start your final project!
 
 # Clone the repository
 
@@ -467,12 +493,19 @@ message in a pop-up window that says something like
 `874fae3..568675e HEAD -> main`.
 
 I won’t bore you with the technical details here, but it basically means
-the push worked! If you open up GitHub in your browser now, you should
-see all the changes you just made have been synchronized from
-JupyterHub!
+the push worked! You have successfully sent your commits to GitHub. If
+you open your GitHub repo in your browser now, you should see all the
+changes you just made have been synchronized from JupyterHub!
 
 <img src="images/rstudio_11_git_push_success.png"
 style="height:30.0%" />
+
+# Submitting to Gradescope
+
+A new step I’m adding this semester is the integration between GitHub
+and Gradescope. There will not be an autograder component to this, but
+you can still submit your work directly from GitHub into our course page
+in Gradescope so I can grade your work and provide feedback there.
 
 # Next steps
 

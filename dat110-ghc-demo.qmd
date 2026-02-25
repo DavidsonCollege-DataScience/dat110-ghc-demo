@@ -7,6 +7,19 @@ format:
     output-file: "README"
 ---
 
+# Introduction
+
+This homework will introduce you to **GitHub Classrooms** (GHC), which will be our platform for the final project for this course. To familiarize yourself with the GitHub workflow, you will complete a demonstration assignment that I have staged in GHC for you.
+
+We're using GHC for a few reasons:
+
+- GitHub is one of the preeminent platforms for data scientists and software engineers to manage and share code. If you continue down this path as a career or even as a hobby, you will undoubtedly use GitHub at some point.
+- GitHub allows you and your partner to work on the project in parallel, each of you contributing code separately without needing to be on the same computer or even in the same physical space.
+- GHC works better for long projects that take several weeks, and that have intermediate deliverables like your project proposal and EDA.
+- GitHub integrates with Gradescope, allowing you to seamlessly submit assignments from one platform directly to the other.
+
+Hopefully this assignment gets you oriented to the platform and ready to start your final project!
+
 # Clone the repository
 
 The Git VCS (version control system), which is what GitHub is built on, comes with its own lexicon that can seem really opaque and confusing. Pulling, committing, pushing, cloning, forking... these are all parts of the GitHub workflow that you will learn over the coming weeks.
@@ -273,9 +286,15 @@ Fortunately, this is super easy once you have committed your changes. In the pop
 
 When you click the Push button, assuming that you followed all the directions earlier in this assignment about setting up a token and updating the cache timeout setting, you should get a very nondescript message in a pop-up window that says something like `874fae3..568675e HEAD -> main`.
 
-I won't bore you with the technical details here, but it basically means the push worked! If you open up GitHub in your browser now, you should see all the changes you just made have been synchronized from JupyterHub!
+I won't bore you with the technical details here, but it basically means the push worked! You have successfully sent your commits to GitHub. If you open your GitHub repo in your browser now, you should see all the changes you just made have been synchronized from JupyterHub!
 
 ![](images/rstudio_11_git_push_success.png){height="30%"}
+
+# Submitting to Gradescope
+
+A new step I'm adding this semester is the integration between GitHub and Gradescope. There will not be an autograder component to this, but you can still submit your work directly from GitHub into our course page in Gradescope so I can grade your work and provide feedback there.
+
+
 
 # Next steps
 
