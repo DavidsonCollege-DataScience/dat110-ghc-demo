@@ -294,7 +294,22 @@ I won't bore you with the technical details here, but it basically means the pus
 
 A new step I'm adding this semester is the integration between GitHub and Gradescope. There will not be an autograder component to this, but you can still submit your work directly from GitHub into our course page in Gradescope so I can grade your work and provide feedback there.
 
+To submit your assignment from GitHub to Gradescope:
 
+1. Login to Gradescope.
+2. Click on this assignment.
+3. When prompted to submit your assignment, first connect your GitHub account.
+4. Next, select the repository for your assignment.
+5. Next, select the branch that has the latest version of your work (should be "main").
+6. Finally, click Upload!
+
+::: callout-note
+Because there is no autograder configured for this assignment, I will be doing all grading manually. You will not receive any automated feedback.
+:::
+
+![](images/gradescope_01_connect_github.png){height="30%"}
+
+![](images/gradescope_02_choose_repo.png){height="30%"}
 
 # Next steps
 

@@ -507,6 +507,28 @@ and Gradescope. There will not be an autograder component to this, but
 you can still submit your work directly from GitHub into our course page
 in Gradescope so I can grade your work and provide feedback there.
 
+To submit your assignment from GitHub to Gradescope:
+
+1.  Login to Gradescope.
+2.  Click on this assignment.
+3.  When prompted to submit your assignment, first connect your GitHub
+    account.
+4.  Next, select the repository for your assignment.
+5.  Next, select the branch that has the latest version of your work
+    (should be “main”).
+6.  Finally, click Upload!
+
+> [!NOTE]
+>
+> Because there is no autograder configured for this assignment, I will
+> be doing all grading manually. You will not receive any automated
+> feedback.
+
+<img src="images/gradescope_01_connect_github.png"
+style="height:30.0%" />
+
+<img src="images/gradescope_02_choose_repo.png" style="height:30.0%" />
+
 # Next steps
 
 If you made it this far without issues, **congratulations!** Git and
