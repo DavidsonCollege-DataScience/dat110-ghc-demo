@@ -2,15 +2,15 @@
 Prof. Pete Benbow
 
 - [Introduction](#introduction)
-- [Clone the repository](#clone-the-repository)
-  - [Copy the repo URL](#copy-the-repo-url)
-  - [Create a new project in RStudio](#create-a-new-project-in-rstudio)
-  - [Verify project creation](#verify-project-creation)
 - [Configure GitHub in RStudio](#configure-github-in-rstudio)
   - [Set your user name and email](#set-your-user-name-and-email)
   - [Create a GitHub token](#create-a-github-token)
   - [Set cache timeout](#set-cache-timeout)
   - [Add your token to RStudio](#add-your-token-to-rstudio)
+- [Clone the repository](#clone-the-repository)
+  - [Copy the repo URL](#copy-the-repo-url)
+  - [Create a new project in RStudio](#create-a-new-project-in-rstudio)
+  - [Verify project creation](#verify-project-creation)
 - [Creating Quarto files](#creating-quarto-files)
   - [Create the file](#create-the-file)
   - [Add your setup block](#add-your-setup-block)
@@ -55,17 +55,79 @@ We’re using GHC for a few reasons:
 Hopefully this assignment gets you oriented to the platform and ready to
 start your final project!
 
+# Configure GitHub in RStudio
+
+First, we should begin by making sure your RStudio environment in
+JupyterHub is correctly configured to work with GitHub Classrooms.
+
+This part of the homework will require you to run several commands in
+the **RStudio console**.
+
+## Set your user name and email
+
+    usethis::use_git_config(user.name = "John Smith", user.email = "josmith@davidson.edu")
+
+## Create a GitHub token
+
+    usethis::create_github_token()
+
+This command should open a new browser tab and take you back to GitHub.
+Specifically, it should take you to a screen where you are prompted to
+create a new PAT (personal access token), which will allow RStudio to
+communicate with your GitHub repository.
+
+Give the token a description, like “CSC110 RStudio token,” then set the
+expiration date for at least 90 days from today’s date. All other
+settings can stay the same. Finally, click the “Generate Token” button
+at the bottom of the page.
+
+> [!IMPORTANT]
+>
+> - Save your token
+> - *Save your token*
+> - **SAVE YOUR TOKEN**
+>
+> When GitHub displays your token, **make sure you save it somewhere!**
+> I cannot believe how many of my students in previous semesters failed
+> to do this, even when I gave them explicit instructions to do so!
+>
+> The best place to save it is in a reputable password manager like
+> 1Password, but at least make sure you put it in a Google Doc somewhere
+> so you don’t lose it. Otherwise you will need to repeat this process.
+> **DO NOT SAVE YOUR TOKEN INSIDE RSTUDIO!**
+
+## Set cache timeout
+
+    usethis::use_git_config(credential.helper="cache --timeout=7800000")
+
+This command should ensure that your GitHub token stays cached in
+RStudio for the required number of days (7.8 million seconds = roughly
+90 days).
+
+## Add your token to RStudio
+
+Use the token you generated two steps ago to run the following command.
+Simply copy-paste your token into the section that starts with “ghp\_”.
+
+    credentials::set_github_pat("ghp_tokenblahblahblah")
+
+This stores your token in RStudio, and should finish the GitHub config
+process.
+
 # Clone the repository
+
+With the config steps completed, we can bring the assignment from GitHub
+into RStudio very easily!
 
 The Git VCS (version control system), which is what GitHub is built on,
 comes with its own lexicon that can seem really opaque and confusing.
 Pulling, committing, pushing, cloning, forking… these are all parts of
 the GitHub workflow that you will learn over the coming weeks.
 
-We’ve already learned one term, “repo,” which is short for repository,
-which is the fundamental unit of organization in GitHub. A repo is a
-collection of files for a specific project or purpose, like a website or
-a research paper.
+We’ve already encountered one term, **repository** (or “repo” for
+short), which is the fundamental unit of organization in GitHub. A repo
+is a collection of files for a specific project or purpose, like a
+website or a research paper.
 
 When we **clone** a repo, we are creating a working copy of it on our
 workstation. Normally this would be your laptop, but in this case we
@@ -129,70 +191,11 @@ repo in GitHub.
 
 <img src="images/rstudio_05_project_created.png" style="height:40.0%" />
 
-# Configure GitHub in RStudio
-
-Now that your repo has been cloned, there are some additional steps you
-should take to make sure your RStudio environment in JupyterHub is
-correctly configured to work with GitHub Classrooms.
-
-This part of the homework will require you to run several commands in
-the **RStudio console**.
-
-## Set your user name and email
-
-    usethis::use_git_config(user.name = "John Smith", user.email = "josmith@davidson.edu")
-
-## Create a GitHub token
-
-    usethis::create_github_token()
-
-This command should open a new browser tab and take you back to GitHub.
-Specifically, it should take you to a screen where you are prompted to
-create a new PAT (personal access token), which will allow RStudio to
-communicate with your GitHub repository.
-
-Give the token a description, like “CSC110 RStudio token,” then set the
-expiration date for at least 90 days from today’s date. All other
-settings can stay the same. Finally, click the “Generate Token” button
-at the bottom of the page.
-
-> [!IMPORTANT]
->
-> - Save your token
-> - *Save your token*
-> - **SAVE YOUR TOKEN**
->
-> When GitHub displays your token, **make sure you save it somewhere!**
-> I cannot believe how many of my students in previous semesters failed
-> to do this, even when I gave them explicit instructions to do so!
->
-> The best place to save it is in a reputable password manager like
-> 1Password, but at least make sure you put it in a Google Doc somewhere
-> so you don’t lose it. Otherwise you will need to repeat this process.
-> **DO NOT SAVE YOUR TOKEN INSIDE RSTUDIO!**
-
-## Set cache timeout
-
-    usethis::use_git_config(credential.helper="cache --timeout=7800000")
-
-This command should ensure that your GitHub token stays cached in
-RStudio for the required number of days (7.8 million seconds = roughly
-90 days).
-
-## Add your token to RStudio
-
-Use the token you generated two steps ago to run the following command.
-Simply copy-paste your token into the section that starts with “ghp\_”.
-
-    credentials::set_github_pat("ghp_tokenblahblahblah")
-
-This stores your token in RStudio, and should finish the GitHub config
-process.
-
 # Creating Quarto files
 
-With the GitHub configuration complete, you should be ready to add
-content to your repo.
+With the GitHub configuration complete and the project cloned into
+RStudio, you should be ready to start the main part of the assignment by
+adding content to your repo.
 
 ## Create the file
 

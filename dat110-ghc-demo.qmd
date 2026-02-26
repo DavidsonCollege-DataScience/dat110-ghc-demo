@@ -20,53 +20,9 @@ We're using GHC for a few reasons:
 
 Hopefully this assignment gets you oriented to the platform and ready to start your final project!
 
-# Clone the repository
-
-The Git VCS (version control system), which is what GitHub is built on, comes with its own lexicon that can seem really opaque and confusing. Pulling, committing, pushing, cloning, forking... these are all parts of the GitHub workflow that you will learn over the coming weeks.
-
-We've already learned one term, "repo," which is short for repository, which is the fundamental unit of organization in GitHub. A repo is a collection of files for a specific project or purpose, like a website or a research paper.
-
-When we **clone** a repo, we are creating a working copy of it on our workstation. Normally this would be your laptop, but in this case we will create a working copy of the repo on your JupyterHub instance. In other words, by cloning the repo, you're copying the assignment from where it is hosted in GitHub and putting that copy in JupyterHub where you can work on it inside RStudio.
-
-Cloning the GHC demo repo is easy, but there are several steps, so follow these carefully:
-
-## Copy the repo URL
-
-In the GHC Demo repo on GitHub, locate the green "Code" button located near the upper-right corner above the list of files. Click to open the Code menu, choose the HTTPS option, and copy the URL for your repo from the menu to your clipboard.
-
-The full URL should appear something like this: `https://github.com/dav-dat110/ghc-demo-USERNAME.git`
-
-![](images/ghc_03_copy_url.png){height="40%"}
-
-## Create a new project in RStudio
-
-Next, open RStudio in JupyterHub and save all your open files. Then, go to the File menu and select "New Project..."
-
-![](images/rstudio_01_create_new_project.png){height="25%"}
-
-When the New Project window opens, select the option labeled "Version Control."
-
-![](images/rstudio_02_version_control.png){height="30%"}
-
-On the next screen, select the option labeled "Git."
-
-![](images/rstudio_03_vc_git.png){height="30%"}
-
-On the next screen, paste your repo's URL into the box that asks for it, then choose the directory that will host your assignment. Finally, click the "Create Project" button. **I highly recommend that you host your assignment within the "CSC110" directory, and NOT within the "dat110_202501" subdirectory.**
-
-![](images/rstudio_04_directory.png){height="30%"}
-
-## Verify project creation
-
-At this point, RStudio should reload and take you into your newly-created project. You can tell that you're inside the project by looking at the small menu directly below your username in the upper-right corner of RStudio. For this demo assignment, it should say something like `ghc-demo-[USERNAME]`.
-
-You should also see your project directory created in the Files window, and if you click into it, you should see a Markdown file named "README." This file contains all the content you saw when you first accessed your repo in GitHub. 
-
-![](images/rstudio_05_project_created.png){height="40%"}
-
 # Configure GitHub in RStudio
 
-Now that your repo has been cloned, there are some additional steps you should take to make sure your RStudio environment in JupyterHub is correctly configured to work with GitHub Classrooms.
+First, we should begin by making sure your RStudio environment in JupyterHub is correctly configured to work with GitHub Classrooms.
 
 This part of the homework will require you to run several commands in the **RStudio console**.
 
@@ -114,9 +70,55 @@ credentials::set_github_pat("ghp_tokenblahblahblah")
 
 This stores your token in RStudio, and should finish the GitHub config process.
 
+# Clone the repository
+
+With the config steps completed, we can bring the assignment from GitHub into RStudio very easily!
+
+The Git VCS (version control system), which is what GitHub is built on, comes with its own lexicon that can seem really opaque and confusing. Pulling, committing, pushing, cloning, forking... these are all parts of the GitHub workflow that you will learn over the coming weeks.
+
+We've already encountered one term, **repository** (or "repo" for short), which is the fundamental unit of organization in GitHub. A repo is a collection of files for a specific project or purpose, like a website or a research paper.
+
+When we **clone** a repo, we are creating a working copy of it on our workstation. Normally this would be your laptop, but in this case we will create a working copy of the repo on your JupyterHub instance. In other words, by cloning the repo, you're copying the assignment from where it is hosted in GitHub and putting that copy in JupyterHub where you can work on it inside RStudio.
+
+Cloning the GHC demo repo is easy, but there are several steps, so follow these carefully:
+
+## Copy the repo URL
+
+In the GHC Demo repo on GitHub, locate the green "Code" button located near the upper-right corner above the list of files. Click to open the Code menu, choose the HTTPS option, and copy the URL for your repo from the menu to your clipboard.
+
+The full URL should appear something like this: `https://github.com/dav-dat110/ghc-demo-USERNAME.git`
+
+![](images/ghc_03_copy_url.png){height="40%"}
+
+## Create a new project in RStudio
+
+Next, open RStudio in JupyterHub and save all your open files. Then, go to the File menu and select "New Project..."
+
+![](images/rstudio_01_create_new_project.png){height="25%"}
+
+When the New Project window opens, select the option labeled "Version Control."
+
+![](images/rstudio_02_version_control.png){height="30%"}
+
+On the next screen, select the option labeled "Git."
+
+![](images/rstudio_03_vc_git.png){height="30%"}
+
+On the next screen, paste your repo's URL into the box that asks for it, then choose the directory that will host your assignment. Finally, click the "Create Project" button. **I highly recommend that you host your assignment within the "CSC110" directory, and NOT within the "dat110_202501" subdirectory.**
+
+![](images/rstudio_04_directory.png){height="30%"}
+
+## Verify project creation
+
+At this point, RStudio should reload and take you into your newly-created project. You can tell that you're inside the project by looking at the small menu directly below your username in the upper-right corner of RStudio. For this demo assignment, it should say something like `ghc-demo-[USERNAME]`.
+
+You should also see your project directory created in the Files window, and if you click into it, you should see a Markdown file named "README." This file contains all the content you saw when you first accessed your repo in GitHub. 
+
+![](images/rstudio_05_project_created.png){height="40%"}
+
 # Creating Quarto files
 
-With the GitHub configuration complete, you should be ready to add content to your repo.
+With the GitHub configuration complete and the project cloned into RStudio, you should be ready to start the main part of the assignment by adding content to your repo.
 
 ## Create the file
 
